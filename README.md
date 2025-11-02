@@ -19,21 +19,20 @@ Each project includes:
 ## 🧠 Featured Projects
 | Project | Description | Demo |
 |----------|--------------|------|
-| **Prior Authorization for Prescribed Medication** | RAG-based AI system that automates medication prior authorization workflows by integrating EHR, drug, and policy data — improving accuracy by 30% and reducing manual effort by 40%. | [View Demo](https://gesivak21.github.io/Portfolio/projects/demo.html) |
-| **Provider Contract & Amendment Extraction** | AI-powered pipeline to extract and validate contract details from healthcare documents using Azure AI Search, improving accuracy by 35%. | — |
-| **Meeting Summarizer AI** | Real-time meeting summarizer that extracts key action items and insights using speech-to-text, LLM summarization, and sentiment analysis. | [View Demo](https://gesivak21.github.io/Portfolio/projects/meeting-summarizer-demo.html) |
-| **Finance Compliance – Screening Agent (RAG-based SDN Checker)** | Automated compliance assistant that screens entities against OFAC’s SDN list using retrieval-augmented generation. | [View Demo](https://gesivak21.github.io/Portfolio/projects/finance-compliance-demo.html) |
-| **Voice Assistant Chatbot** | Interactive voice-based chatbot that enables natural conversations through speech recognition and real-time AI responses. | [View Demo](https://gesivak21.github.io/Portfolio/projects/voice-assistant-demo.html) |
-| **Smart Database AI Assistant** | Natural language and voice-based query assistant for relational databases using RAG and SQL-aware LLMs. | [View Demo](https://gesivak21.github.io/Portfolio/projects/smart-db-ai-demo.html) |
-| **PDF Document Summarizer** | Multi-agent summarizer that generates structured insights from lengthy PDFs using an orchestrator-supervisor model. | [View Demo](https://gesivak21.github.io/Portfolio/projects/pdf-summarizer-demo.html) |
+| **Smart Azure Document Extraction App** | Streamlit-based app using **Azure Document Intelligence** and **Azure OpenAI** to extract structured data from IDs, invoices, and contracts. | [View Demo](https://gesivak21.github.io/MyPortfolio/projects/azure-document-demo.html) |
+| **Prior Authorization for Prescribed Medication** | RAG-based AI system automating healthcare medication authorization workflows, improving accuracy by 30% and reducing manual effort by 40%. | [View Demo](https://gesivak21.github.io/MyPortfolio/projects/demo.html) |
+| **Finance Compliance – Screening Agent (RAG-based SDN Checker)** | Automated compliance assistant that screens entities against OFAC’s SDN list using retrieval-augmented generation. | [View Demo](https://gesivak21.github.io/MyPortfolio/projects/finance-compliance-demo.html) |
+| **Smart Database AI Assistant (Text or Voice Queries)** | LLM-powered assistant enabling natural language and voice-based SQL queries over relational databases. | [View Demo](https://gesivak21.github.io/MyPortfolio/projects/smart-db-ai-demo.html) |
+| **PDF Document Summarizer – Orchestrator Supervisor Model** | Multi-agent summarizer generating structured insights from lengthy PDFs using an orchestrator-supervisor LLM workflow. | [View Demo](https://gesivak21.github.io/MyPortfolio/projects/pdf-summarizer-demo.html) |
+| **Meeting Summarizer AI** | Real-time meeting summarizer that extracts actionable insights using speech-to-text, GPT summarization, and sentiment analysis. | [View Demo](https://gesivak21.github.io/MyPortfolio/projects/meeting-summarizer-demo.html) |
 
 ---
 
-## 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3, Font Awesome  
-- **Design:** Responsive layout, modern UI with gradient animation  
+- **Frameworks & Tools:** Streamlit, FastAPI  
+- **AI Stack:** LangChain, LangGraph, Azure OpenAI, Azure Document Intelligence, GPT-4, Whisper  
 - **Hosting:** GitHub Pages  
-- **Media:** Embedded MP4 demos  
+- **Media:** Embedded MP4 demo videos  
 
 ---
 
