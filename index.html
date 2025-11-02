@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G. Siva Kumar | Generative AI Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">G. Siva Kumar</div>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="profile-container">
+      <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic" id="profile-pic" />
+    </div>
+
+    <h1>G. Siva Kumar</h1>
+    <p>Generative AI Engineer | 3+ years of experience | Open to new opportunities</p>
+
+    <div class="btn-group">
+      <a href="docs/Resume.pdf" class="btn" target="_blank">
+        <i class="fa-solid fa-file"></i> View Resume
+      </a>
+      <a href="docs/Resume.pdf" class="btn" download>
+        <i class="fa-solid fa-download"></i> Download Resume
+      </a>
+    </div>
+  </header>
+
+  <!-- Profile Zoom Modal -->
+  <div id="photo-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Zoomed Profile" />
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about" class="floating-section fade-in">
+      <h2>About Me</h2>
+      <p>
+        I'm a Generative AI Engineer with 3 years of experience applying LLMs, RAG pipelines, and cloud technologies 
+        to solve real-world challenges in healthcare and finance. Passionate about building intelligent, scalable AI systems 
+        that automate decision-making, extract insights from documents, and improve operational efficiency.
+      </p>
+      <h3>Education</h3>
+      <p><strong>B.Tech in Electrical and Electronics Engineering</strong><br>
+      Amrita Vishwa Vidyapeetham, Tamil Nadu<br>
+      <span class="edu-date">2018 – 2022</span></p>
+    </section>
+
+    <section id="experience" class="floating-section fade-in">
+      <h2>Work Experience</h2>
+      <div class="job">
+        <div class="job-header">
+          <h3>Generative AI Engineer – Cognizant Technology Solutions</h3>
+          <span class="job-date">June 2022 – Sept 2025</span>
+        </div>
+        <ul>
+          <li>Built and deployed AI pipelines integrating LLMs with domain-specific knowledge bases.</li>
+          <li>Improved automation and accuracy of business workflows using LangChain and LangGraph.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="floating-section fade-in">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+      <!-- Project 1: Smart Azure Document Extraction App -->
+      <div class="project">
+        <h3>
+          <a href="https://github.com/gesivak21/Document-Extraction" target="_blank">
+            Smart Azure Document Extraction App
+          </a>
+        </h3>
+        <div class="project-demo">
+          <a href="projects/azure-document-demo.html" class="btn" target="_blank">
+            <i class="fa-solid fa-play"></i> View Demo
+          </a>
+        </div>
+        <ul>
+          <li>Developed a Streamlit web app that extracts structured data from diverse documents using Azure Document Intelligence and Azure OpenAI.</li>
+          <li>Automatically detects document type — IDs, invoices, receipts, contracts, and certificates — and applies the right extraction model.</li>
+          <li>Combines Azure's prebuilt extraction models with GPT-based structuring for generic layouts and complex documents.</li>
+          <li>Tech Stack: Streamlit, Azure Document Intelligence, Azure OpenAI.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: Prior Authorization (Healthcare RAG) -->
+      <div class="project">
+        <h3>
+          <a href="https://github.com/gesivak21/Portfolio" target="_blank">
+            Prior Authorization for Prescribed Medication
+          </a>
+        </h3>
+        <div class="project-demo">
+          <a href="projects/demo.html" class="btn" target="_blank">
+            <i class="fa-solid fa-play"></i> View Demo
+          </a>
+        </div>
+        <ul>
+          <li>Built a RAG-based AI system for determining medication reimbursement eligibility.</li>
+          <li>Used EHR, Drug, and Policy data to automate decisions: Approval, Denial, or More Info.</li>
+          <li>Tech Stack: LangGraph, LangChain, Gemini, FastAPI, Streamlit, GCP.</li>
+          <li>Reduced manual effort by 40%, improved accuracy by 30%.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: Finance Compliance (SDN Checker) -->
+      <div class="project">
+        <h3>Finance Compliance – Screening Agent (RAG-based SDN Checker)</h3>
+        <div class="project-demo">
+          <a href="projects/finance-compliance-demo.html" class="btn" target="_blank">
+            <i class="fa-solid fa-play"></i> View Demo
+          </a>
+        </div>
+        <ul>
+          <li>Developed an AI compliance tool that screens financial data against the SDN (OFAC) list.</li>
+          <li>Implements a RAG pipeline to identify sanctioned entities and prevent violations.</li>
+          <li>Tech Stack: LangChain, LangGraph, OpenAI Embeddings, FAISS, Python, Streamlit.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4: Smart Database AI Assistant -->
+      <div class="project">
+        <h3>Smart Database AI Assistant – Text or Voice RAG Queries</h3>
+        <div class="project-demo">
+          <a href="projects/smart-db-ai-demo.html" class="btn" target="_blank">
+            <i class="fa-solid fa-play"></i> View Demo
+          </a>
+        </div>
+        <ul>
+          <li>Built an AI system to query relational databases through text or voice using LLMs.</li>
+          <li>Supports natural language questions like “Show me last quarter’s revenue growth.”</li>
+          <li>Tech Stack: LangGraph, PostgreSQL, SQLAlchemy, LangChain, Whisper, Streamlit.</li>
+        </ul>
+      </div>
+
+      <!-- Project 5: PDF Summarizer -->
+      <div class="project">
+        <h3>PDF Document Summarizer – Orchestrator Supervisor Model</h3>
+        <div class="project-demo">
+          <a href="projects/pdf-summarizer-demo.html" class="btn" target="_blank">
+            <i class="fa-solid fa-play"></i> View Demo
+          </a>
+        </div>
+        <ul>
+          <li>Implemented a hierarchical summarization system using orchestrator-supervisor model logic.</li>
+          <li>Extracts structured summaries from lengthy PDFs like research papers or contracts.</li>
+          <li>Tech Stack: LangGraph, GPT-4, PyMuPDF, FastAPI, Streamlit.</li>
+        </ul>
+      </div>
+
+      <!-- Project 6: Meeting Summarizer -->
+      <div class="project">
+        <h3>Meeting Summarizer AI and Take Actionable Insights</h3>
+        <div class="project-demo">
+          <a href="projects/meeting-summarizer-demo.html" class="btn" target="_blank">
+            <i class="fa-solid fa-play"></i> View Demo
+          </a>
+        </div>
+        <ul>
+          <li>Designed an AI assistant that automatically summarizes meetings and extracts key action items.</li>
+          <li>Uses speech-to-text, LLM summarization, and sentiment analysis for context-aware summaries.</li>
+          <li>Tech Stack: Whisper, LangChain, OpenAI GPT-4o, FastAPI, Streamlit.</li>
+        </ul>
+      </div>
+    </div>
+    </section>
+
+    <section id="skills" class="floating-section fade-in">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Programming -->
+        <span class="skill-programming"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-programming"><i class="fas fa-bolt"></i> FastAPI</span>
+        <span class="skill-programming"><i class="fab fa-git-alt"></i> Git</span>
+
+        <!-- AI / ML -->
+        <span class="skill-ai"><i class="fas fa-robot"></i> Machine Learning</span>
+        <span class="skill-ai"><i class="fas fa-brain"></i> Deep Learning</span>
+        <span class="skill-ai"><i class="fas fa-eye"></i> Computer Vision</span>
+        <span class="skill-ai"><i class="fas fa-language"></i> NLP</span>
+        <span class="skill-ai"><i class="fas fa-lightbulb"></i> Prompt Engineering</span>
+        <span class="skill-ai"><i class="fas fa-link"></i> LangChain</span>
+        <span class="skill-ai"><i class="fas fa-project-diagram"></i> LangGraph</span>
+        <span class="skill-ai"><i class="fas fa-vial"></i> LangSmith</span>
+        <span class="skill-ai"><i class="fas fa-network-wired"></i> RAG</span>
+
+        <!-- Azure / DB -->
+        <span class="skill-data"><i class="fas fa-search"></i> Azure AI Search</span>
+        <span class="skill-data"><i class="fas fa-database"></i> Azure CosmosDB</span>
+
+        <!-- Data / DB -->
+        <span class="skill-data"><i class="fas fa-database"></i> MySQL</span>
+        <span class="skill-data"><i class="fas fa-database"></i> FAISS</span>
+        <span class="skill-data"><i class="fas fa-chart-line"></i> Applied Statistics</span>
+      </div>
+
+    </section>
+
+    <section id="contact" class="floating-section fade-in">
+      <h2>Let's Connect</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:gesivak21@gmail.com">gesivak21@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> +91 8903648108</p>
+      <p>
+        <i class="fab fa-linkedin"></i> 
+        <a href="https://linkedin.com/in/g-siva" target="_blank">LinkedIn</a> |
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/gesivak21/Portfolio" target="_blank">GitHub</a> |
+        <i class="fab fa-medium"></i>
+        <a href="https://medium.com/@gesivak21" target="_blank">Medium</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 G. Siva Kumar. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/g-siva" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/gesivak21/Portfolio" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://medium.com/@gesivak21" target="_blank"><i class="fab fa-medium"></i></a>
+    </div>
+  </footer>
+
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+
+    // Profile photo modal (zoom)
+    const modal = document.getElementById("photo-modal");
+    const img = document.getElementById("profile-pic");
+    const modalImg = document.getElementById("modal-img");
+    const closeBtn = document.querySelector(".close");
+
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    };
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+  <script>
+  // 🌬️ Observe elements with .fade-in and reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  // Observe all fade-in elements
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav ul li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop - 140;
+      const sectionHeight = section.offsetHeight;
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+        current = sections[sections.length - 1].getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
