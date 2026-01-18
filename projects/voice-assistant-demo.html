@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Demo - Voice Assistant Chatbot</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    body {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(120deg, #b3e5fc, #e1f5fe, #b3e5fc, #81d4fa);
+    }
+
+    .video-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007acc;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #222;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 18px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #005f8c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="video-container">
+    <h2>Project Demo: Voice Assistant Chatbot</h2>
+
+    <p>
+      The <strong>Voice Assistant Chatbot</strong> is a real-time conversational AI application
+      that enables users to interact using natural speech.
+      It combines speech-to-text, large language models, and text-to-speech
+      to deliver a seamless voice-driven experience.
+    </p>
+
+    <p>
+      The assistant supports multi-language input, configurable voice output,
+      and secure session-based API key handling.
+      It is optimized for cloud deployment and runs reliably on Render.
+    </p>
+
+    <video controls>
+      <source src="../videos/voice-assistant-demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <a href="../index.html#projects" class="back-btn">
+      ← Back to Projects
+    </a>
+  </div>
+</body>
+</html>
